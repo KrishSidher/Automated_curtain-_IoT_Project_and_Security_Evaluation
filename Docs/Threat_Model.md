@@ -37,7 +37,7 @@ We will be using the OWASP Threat Modelling approach, this will allow us to iden
 Below is a DFD diagram which breaks down the system into its components, the flow of data and the trust boundaries. This allows us to analyse each element of the diagram using STRIDE.
 
 ### Figure 1: Data Flow Diagram
-<img width="1351" height="1081" alt="DFD FINAL" src="https://github.com/user-attachments/assets/1bc2dcc4-096c-4fdf-af8d-3fe0919d60b7" />
+<img width="1351" height="1081" alt="DFD FINAL" src="https://github.com/user-attachments/assets/0466a3e0-ce7e-4f11-aaa6-0ae63d479264" />
 
 ### Components:
 - Client's device (controller) -> This will be the client's device on which they can send commands to the Raspberry-Pi over the local network.
@@ -60,7 +60,8 @@ Below is a DFD diagram which breaks down the system into its components, the flo
 
 ## Threat Identification (STRIDE):
 ### Figure 2: STRIDE Table
-<img width="820" height="5888" alt="STRIDE FINAL FINAL;" src="https://github.com/user-attachments/assets/e5028087-e6ab-47f7-9253-ea737e1af827" />
+
+<img width="820" height="5888" alt="STRIDE FINAL FINAL;" src="https://github.com/user-attachments/assets/fdc70191-1e92-4706-875e-09505dee2dc2" />
 
 NOTE: After reviewing the STRIDE table above i've noticed the majority of security concerns arise from the same things, such as: no authentication, no/weak encryption, the absence of logging, no input validation and no rate-limiting. Addressing these issues will mitigate the majority of threats towards this system.
 
@@ -68,17 +69,20 @@ NOTE: After reviewing the STRIDE table above i've noticed the majority of securi
 Each risk is rated by the likelihood of it happening and the impact it would have if it did occur. These 2 are then combined using a risk matrix to provide an overall risk rating.
 
 ### Figure 3: Risk Matrix
-<img width="1143" height="365" alt="RISK MATRIX DONE" src="https://github.com/user-attachments/assets/bf0493f1-ad7e-47be-9a93-e060141e9bc1" />
+
+<img width="1143" height="365" alt="RISK MATRIX DONE" src="https://github.com/user-attachments/assets/afbdae88-6138-4697-b250-98518d7b5f98" />
 
 ### Figure 4: Risk Ratings
-<img width="1133" height="5678" alt="RISK TABLE DONE" src="https://github.com/user-attachments/assets/6f4107ad-680c-4670-9fcd-83ed67f379cd" />
+
+<img width="1133" height="5678" alt="RISK TABLE DONE" src="https://github.com/user-attachments/assets/10c5af3b-e548-4420-9c72-d649a3fd3295" />
 
 I've found the highest risks are: Spoofing and Information Disclosure at both the curtain control application and on the data flow between the application and the client's device. The majority of issues stem from: a lack in authentication and a lack in encryption of data in-transit. Therefore, we must put more resources towards mitigating these issues.
 
 ## Mitigations:
 
 ### Figure 5: Mitigations Table
-<img width="820" height="3498" alt="MITIGATIONS TABLE FINAL" src="https://github.com/user-attachments/assets/e2c18310-6c30-48b6-b4f8-30b2205db1ae" />
+
+<img width="820" height="3498" alt="MITIGATIONS TABLE FINAL" src="https://github.com/user-attachments/assets/b0e79507-7c60-4b5d-878c-58e9d5e68a5d" />
 
 A couple mitigations cover a wide range of threats here: TLS Encryption for tampering and information disclosure over data channels, authentication for spoofing, logging for repudiation. This reflects the pattern we saw during the risk rating process.
 
