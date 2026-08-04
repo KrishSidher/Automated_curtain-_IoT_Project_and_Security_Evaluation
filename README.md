@@ -15,7 +15,7 @@ The project started as an automated curtain system where a Raspberry Pi controls
 
 ## System Overview:
 
-<img width="406" height="541" alt="1" src="https://github.com/user-attachments/assets/ea73269c-33b0-4e51-8faa-7c86764c5ea7"/>
+<img width="3024" height="4032" alt="final build on window" src="https://github.com/user-attachments/assets/1288e006-c49f-46c5-b1e5-75726f6834e9" />
 
 > The finished device on my window
 
