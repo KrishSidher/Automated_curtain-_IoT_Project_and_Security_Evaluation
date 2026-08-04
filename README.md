@@ -94,6 +94,12 @@ Each of my findings was fixed/mitigated and then they were verified to confirm t
 │   ├── Diagram of Electrical Wiring.jpg
 │   ├── Diagram of Mechanical Drive Assembly.jpg
 │   └── Diagram of System Overview Pre-Implementation.jpg
+│   └── DFD.jpg
+│   └── MITIGATIONS_TABLE.jpeg
+│   └── RISK_MATRIX.jpeg
+│   └── RISK_TABLE.jpeg
+│   └── STRIDE_Table.jpeg
+│   └── Final_Build.jpeg
 ├── Docs/
 │   ├── Threat_Model.md
 │   ├── Gap_Analysis.md
